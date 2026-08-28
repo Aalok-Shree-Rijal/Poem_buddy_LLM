@@ -2,7 +2,7 @@
 from micrograd.value import Value
 
 # if the above import fails try running this: $env:PYTHONPATH="..\src"
-
+# NOTE: you must be inside Poem_buddy_LLM/experiments while running the above code in terminal
 
 # from below here experiment different expressions and make your own mini networks, calculate the gradient
 # and compare what the code produced by what you got, it is lot more fun

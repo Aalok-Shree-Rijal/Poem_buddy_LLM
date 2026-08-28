@@ -1,3 +1,6 @@
+# The below import is needed only in Day 2
+import math
+
 class Value:
     def __init__(self, _data, _children=(), _label='', _op=''):
         self._data = _data
@@ -24,6 +27,15 @@ class Value:
         def _backward():
             self._grad += other._data * out._grad
             other._grad += self._data * out._grad
+        out._backward = _backward
+        return out
+
+    # This implimentation was done in day_02, ignore this in day 1
+    def tanh(self):
+        cal = (math.exp(2*self._data)-1)/(math.exp(2*self._data)+1)
+        out = Value(cal, (self,), _op = 'tanh')
+        def _backward():
+            self._grad += (1 - cal**2) * out._grad
         out._backward = _backward
         return out
 
