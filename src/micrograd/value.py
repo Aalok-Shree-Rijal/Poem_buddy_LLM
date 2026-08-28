@@ -42,21 +42,4 @@ class Value:
         for item in reversed(topo_list):
             item._backward()
 
-# from below here experiment different expressions and make your own mini networks, calculate the gradient
-# and compare what the code produced by what you got, it is lot more fun
-
-# a = Value(2); a._label = "a"
-# b = Value(3); b._label = "b"
-# d = Value(3); d._label = "d"
-
-# d = a+a+a; d._label = "d"
-# c = a + b; c._label="c"
-# e = (a+b)*(a+b); e._label="e"
-
-# e.backward()
-
-# print(a._grad)
-# print(b._grad)
-# print(c._grad)
-# print(d._grad)
-# print(e._grad)
+# for experiments by using this value class go to (./experiments/day01.py)
