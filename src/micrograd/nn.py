@@ -1,5 +1,12 @@
 import random
+
+# which way we are going to use import matters as well
+# NOTE: if you are using nn.py as a module and importing Neuron then use the below importing method
 from .value import Value
+
+# NOTE: if you are just running experiments directly in the nn.py file
+# use : 
+# from value import Value
 
 class Neuron:
     def __init__(self, size:int):
@@ -16,6 +23,9 @@ class Neuron:
 
         # initializing bias
         self.bias = Value(random.uniform(-1.0, 1.0)); self.bias._label = 'b'
+
+    def __repr__(self):
+        return f"weights: {self.weights}, bias: {self.bias}"
 
     def __call__(self, data):
         # initializing weighted sum to 0. i.e: x1w1 + x2w2 + ... + xnwn
@@ -43,4 +53,28 @@ class Neuron:
         # this returns a value object that is assigned to the calling variable.
         return o
 
-# for experiments using this go to (./experiments/day02.py)
+# Below this is the content of Day 4 so don't look at it if you are in day 2
+class Layer:
+    def __init__(self, nin, nout):
+    # nin = neuron inputs, nout = no. of outputs/neurons
+
+        # array of neurons
+        self.neurons = []
+
+        # creating the neurons
+        for i in range(0, nout):
+            name = f"neuron{i}"
+            name = Neuron(nin)
+            self.neurons.append(name)
+
+    def __call__(self, inputs):
+        self.outputs = []
+        self.inputs = inputs
+        # giving the inputs
+        for neuron in self.neurons:
+            out = neuron(inputs)
+            self.outputs.append(out) 
+
+        return self.outputs
+
+# for experiments using this go to (./experiments/day02.py and ./experiments/day03.py)
