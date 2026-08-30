@@ -2,7 +2,7 @@ import random
 
 # which way we are going to use import matters as well
 # NOTE: if you are using nn.py as a module and importing Neuron then use the below importing method
-from .value import Value
+# from .value import Value
 
 # NOTE: if you are just running experiments directly in the nn.py file
 # use : 
@@ -34,7 +34,16 @@ class Neuron:
         # creating 'Value' variable for variables(x1,x2,...,xn)
         for i in range(0, len(data)):
             name = f"x{i}"
-            name = Value(data[i]); name._label = f"x{i}"
+
+            ### This is very important ###
+            # This right here is the python technicality of how our abstraction is working
+            # since our layers provides the output that are not simple numbers but a value object
+            # while using an MLP we should first check if whether the inputs are in numeric form
+            # or already converted into Value objects
+            if isinstance(data[i], Value):
+                name = data[i]
+            else:
+                name = Value(data[i]); name._label = f"x{i}"
 
             # calculating product of a single term of weighted sum (x1*w1),(x2*w2),..., (xn*wn)
             mul_name = f"x{i}w{i}"
@@ -67,6 +76,10 @@ class Layer:
             name = Neuron(nin)
             self.neurons.append(name)
 
+    # This will print all the weights and bias in the Layer in a form of array
+    def __repr__(self):
+        return f"{self.neurons}"
+
     def __call__(self, inputs):
         self.outputs = []
         self.inputs = inputs
@@ -77,4 +90,44 @@ class Layer:
 
         return self.outputs
 
-# for experiments using this go to (./experiments/day02.py and ./experiments/day03.py)
+# below this is the content from day 4
+
+class MLP:
+
+    # MLP(no. of inputs, [no. of neurons in layer 0, no. of neurons in layer 1, .....])
+    def __init__(self, nin, nouts):
+        # this stores all the layers we have 
+        self.val_layers = []
+
+        # since the output of previous layer becomes the input of upcoming one we need this
+        current_input = nin
+
+        for i in range(0, len(nouts)):
+            current_layer = Layer(current_input, nouts[i])
+            self.val_layers.append(current_layer)
+            current_input = nouts[i]
+
+    def __repr__(self):
+
+        # This prints the MLP in a form of array where no. of elements represents the no. of layers
+        # Each layer's weights and bias is also shown in the array
+        return f"{self.val_layers}"
+
+    def __call__(self, inputs):
+        current_input = inputs
+
+        # this array contains outputs from all the layers in the form of an array
+        self.outs = []
+        for layer in self.val_layers:
+            out = layer(current_input)
+            self.outs.append(out)
+            current_input = out
+
+        return self.outs
+
+    # This function is here to give us only the final output after the initial input has passed through
+    # all the hidden layers
+    def final_output(self):
+        return self.outs[-1]
+
+# for experiments using this go to (./experiments/day02.py and ./experiments/day03.py and ./experiments/day04.py)
