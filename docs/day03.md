@@ -16,4 +16,4 @@ Neurons -> Weights, bias, variables
 Weights, bias, variables -> Value class
 Value class -> gradient values, data attributes, etc
 
-always think through this arrow diagram while tryint to understand the code
+always think through this arrow diagram while trying to understand the code
