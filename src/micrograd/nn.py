@@ -2,7 +2,7 @@ import random
 
 # which way we are going to use import matters as well
 # NOTE: if you are using nn.py as a module and importing Neuron then use the below importing method
-# from .value import Value
+from .value import Value
 
 # NOTE: if you are just running experiments directly in the nn.py file
 # use : 
@@ -129,5 +129,50 @@ class MLP:
     # all the hidden layers
     def final_output(self):
         return self.outs[-1]
+
+    # this loss function will be different later on but for just Day 05 we will have a very simple one because 
+    # we will make sure to make the last layer give only one output as the final output
+    def learn(self, input, target, learning_step):
+        # This is the loop that decides the no. of iterations in learning
+        for epoch in range(1,500):
+
+            # clearing previous loss values
+            loss = []
+
+            for i in range(0, len(target)):
+
+                # forward pass
+                prediction = self(input[i])[-1][0]
+
+                # calculating loss
+                current_loss = (target[i][0] - prediction)**2 
+                # appending the loss to our list
+                loss.append(current_loss)
+
+                # resetting gradients
+                for layer in self.val_layers:
+                    for neuron in layer.neurons:
+                        for weight in neuron.weights:
+                            weight._grad = 0
+                
+                        neuron.bias._grad = 0
+
+                # backpropagation
+                current_loss.backward()
+
+                # updating parameters
+                for layer in self.val_layers:
+                    for neurons in layer.neurons:
+                        for weight in neurons.weights:
+                            weight._data = weight._data - (learning_step*weight._grad)
+                        neurons.bias._data -= learning_step * neurons.bias._grad
+
+            # calculating avg loss
+            avg_loss = sum(val._data for val in loss)/len(loss)
+
+            # printing out loss
+            print(f"Epoch: {epoch}, loss={avg_loss}")
+
+
 
 # for experiments using this go to (./experiments/day02.py and ./experiments/day03.py and ./experiments/day04.py)

@@ -3,7 +3,7 @@ but it is not that hard to be honest.
 Let's dissect the things you need to know before hand and the things that the code tells you 
 
 To grasp the idea of how an artificial neuron (simplified form of biological ones) work take a look at
-[image](./Artificial_neuron.png)
+[image](./images/Artificial_neuron.png)
 
 every neuron follows the below steps and that's what we are trying to replicate by code:
 1. we take inputs (x0, x1, ..., xn)

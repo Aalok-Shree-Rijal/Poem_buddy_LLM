@@ -9,7 +9,7 @@ and transformed them into a basic MLP that actually works like the real deal exc
 upcoming complex topics like (loss function, gradient descent, etc)
 
 I have very carefully made the illustration for you guys so that it will be easier
-to understand, go to [image](./simple_mlp.png)
+to understand, go to [image](./images/simple_mlp.png)
 
 Now see, how initially all we did was give two inputs i1 and i2,
 but then those inputs are passed not just through a neuron but layers
@@ -35,7 +35,7 @@ focus on the layer's neuron rather than the inputs.
 look for a single neuron.
 inorder to make this visualization easy i have made another illustration of the same image
 but isolated just o1's path.
-go see the [image](./mlp_single_output_path.png)
+go see the [image](./images/mlp_single_output_path.png)
 
 notice how n2 and n3 of L3 don't have any direct relationship with o1?
 this will come in handy in day04's one experiment.

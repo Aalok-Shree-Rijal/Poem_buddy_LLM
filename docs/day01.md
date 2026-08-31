@@ -9,7 +9,7 @@ c = a * b
 d = c + a
 
 It is a bit complicated at the first glance but let's break it down.
-for the graphical representation to go [the graphical_representation](./graphical_representation.png)
+for the graphical representation to go [the graphical_representation](./images/graphical_representation.png)
 
 we know that,
 dd/dd = 1 (this is basic derivative in action, basically: if you change by 1 d will change by 1 lol..)
