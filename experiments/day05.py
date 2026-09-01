@@ -1,4 +1,7 @@
-from src.micrograd import MLP
+from micrograd.nn import MLP
+
+# if the above import fails try running the below code in the terminal session
+# $env:PYTHONPATH="../src"
 
 # This dummy dataset below is only used from Day 05
 
@@ -29,7 +32,7 @@ for i in range(len(xs)):
         f"prediction={prediction._data}"
     )
 
-model.learn(xs, ys, 1)
+model.learn(xs, ys, 0.10)
 
 # testing whether the model actually is good at prediction now
 for i in range(len(xs)):

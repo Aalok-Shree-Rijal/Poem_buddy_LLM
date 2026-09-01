@@ -31,3 +31,8 @@ Think of it like this, our model works in the following step which gives it the 
 8. We repeat this learning iteration over a wide set of inputs and targets of a dataset
 9. Then we get what we call a "learning model" that can predict (~)accurately
 TADAAA!!
+
+PS: today we have only taken a neural network that explicitly only has 1 neuron in the final layer so that there is only
+one output/prediction and calculating loss function and iteration becomes simpler, we will expand on it later.
+Also the xs and ys are carefully made such that the output ys only consists of -1 and 1 because that's the normal
+output we get from our neurons due to tanh()

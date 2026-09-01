@@ -134,7 +134,7 @@ class MLP:
     # we will make sure to make the last layer give only one output as the final output
     def learn(self, input, target, learning_step):
         # This is the loop that decides the no. of iterations in learning
-        for epoch in range(1,500):
+        for epoch in range(1,100):
 
             # clearing previous loss values
             loss = []
