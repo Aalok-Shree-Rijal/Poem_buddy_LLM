@@ -130,49 +130,57 @@ class MLP:
     def final_output(self):
         return self.outs[-1]
 
+    # The block just below is in Day 06 it is done to make the code more optimizable
+    def parameters(self):
+        params = []
+        for layer in self.val_layers:
+            for neuron in layer.neurons:
+                params.extend(neuron.weights)
+                params.append(neuron.bias)
+        return params
+
+    def parameter_count(self):
+        return len(self.parameters())
+    # updating parameters
+    def update(self, learning_step):
+        for p in self.parameters():
+            p._data -= learning_step * p._grad
+
+    def zero_grad(self):
+        for p in self.parameters():
+            p._grad = 0
+
+    def train_step(self, x, target, learning_step):
+
+        prediction = self(x)[-1][0]
+
+        loss = (target - prediction)**2
+
+        self.zero_grad()
+
+        loss.backward()
+
+        self.update(learning_step)
+
+        return loss
     # this loss function will be different later on but for just Day 05 we will have a very simple one because 
     # we will make sure to make the last layer give only one output as the final output
-    def learn(self, input, target, learning_step):
+    def learn(self, inputs, targets, learning_step):
         # This is the loop that decides the no. of iterations in learning
         for epoch in range(1,100):
 
             # clearing previous loss values
-            loss = []
+            loss_li = []
 
-            for i in range(0, len(target)):
+            for i in range(0, len(targets)):
 
-                # forward pass
-                prediction = self(input[i])[-1][0]
-
-                # calculating loss
-                current_loss = (target[i][0] - prediction)**2 
-                # appending the loss to our list
-                loss.append(current_loss)
-
-                # resetting gradients
-                for layer in self.val_layers:
-                    for neuron in layer.neurons:
-                        for weight in neuron.weights:
-                            weight._grad = 0
-                
-                        neuron.bias._grad = 0
-
-                # backpropagation
-                current_loss.backward()
-
-                # updating parameters
-                for layer in self.val_layers:
-                    for neurons in layer.neurons:
-                        for weight in neurons.weights:
-                            weight._data = weight._data - (learning_step*weight._grad)
-                        neurons.bias._data -= learning_step * neurons.bias._grad
+                loss = self.train_step(inputs[i], targets[i][0], learning_step)
+                loss_li.append(loss)
 
             # calculating avg loss
-            avg_loss = sum(val._data for val in loss)/len(loss)
+            avg_loss = sum(val._data for val in loss_li)/len(loss_li)
 
             # printing out loss
             print(f"Epoch: {epoch}, loss={avg_loss}")
-
-
 
 # for experiments using this go to (./experiments/day02.py and ./experiments/day03.py and ./experiments/day04.py)
