@@ -53,11 +53,11 @@ class Neuron:
             weighted_sum += mul_name; weighted_sum._label = 'sum'
 
         # calculating final result after adding bias
-        sum = weighted_sum + self.bias; sum._label = 'res'
-        self.po = sum._data
+        total_sum = weighted_sum + self.bias; total_sum._label = 'res'
+        self.po = total_sum._data
 
         # calculating final output after passing result through tanh()
-        o = sum.tanh(); o._label='o'
+        o = total_sum.tanh(); o._label='o'
 
         # this returns a value object that is assigned to the calling variable.
         return o
