@@ -35,7 +35,7 @@ main additions to the MLP class done today are:
     <br><br>
     and i found out that #Andrej is basically building the same thing# T_T<br>
     so, I have decided to use the <a href='https://karpathy.ai/zero-to-hero.html'>Neural Networks: Zero to Hero</a> as my main learning material<br><br>
-    <i><b>but. but.. but...<b></i> in usual Aalok fashion I will document my journey not just copying code from Andrej's course but showcasing to you all about where i got stuck, how did i tackle it, what made it click, any other resources that i dug up for better understanding, etc. <br>
+    <i><b>but. but.. but...</b></i> in usual Aalok fashion I will document my journey not just copying code from Andrej's course but showcasing to you all about where i got stuck, how did i tackle it, what made it click, any other resources that i dug up for better understanding, etc. <br>
     <br>
     So stick around and see what happens to this project<br>
     PEACEE!!
