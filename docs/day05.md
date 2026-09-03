@@ -11,7 +11,7 @@ It substantially improved our abstraction.
 Now the most important thing,<br>
 Remember from <a href="./day04.md">file's</a> NOTE section<br>
 Well, today we trampled that statement.<br>
-Now, our model is able to <b><i>"LEARN"</i><b><br>
+Now, our model is able to <b><i>"LEARN"</i></b><br>
 
 <b>ISN'T THAT FUCKING AWESOMEEE????</b><br>
 
