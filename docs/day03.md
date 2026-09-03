@@ -1,4 +1,4 @@
-<h1>Day 3 is really simple and straightforward,
+<h1>Day 3 is really simple and straightforward,</h1>
 
 Now we have already built the complicated and manual task of creating Neurons and Values<br>
 We now proceed more into the area of trying to modularize those classes we have created<br>
