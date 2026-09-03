@@ -9,7 +9,7 @@ worry if the operation we are doing is Value-Value operation.<br>
 It substantially improved our abstraction.
 <hr>
 Now the most important thing,<br>
-Remember from <a href="./day04.md">file</a> line:46<br>
+Remember from <a href="./day04.md">file's</a> NOTE section<br>
 Well, today we trampled that statement.<br>
 Now, our model is able to <b><i>"LEARN"</i><b><br>
 
