@@ -5,7 +5,7 @@ Let's dissect the things you need to know before hand and the things that the co
 To grasp the idea of how an artificial neuron (simplified form of biological ones) work take a look at
 [image](./images/Artificial_neuron.png)
 
-every neuron follows the below steps and that's what we are trying to replicate by code:
+<u><b>every neuron follows the below steps and that's what we are trying to replicate by code:</b></u>
 1. we take inputs (x0, x1, ..., xn)
 2. we multiply the inputs with initialized respective weights (w0, w1, ..., wn)
 3. we take the weighted sum (x0w0 + x1w1 + x2w2 + ... + x3w3)

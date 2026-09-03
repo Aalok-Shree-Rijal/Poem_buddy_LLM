@@ -1,16 +1,37 @@
+<style>
+  pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Adds a scrollbar if the code is too wide */
+  }
+  code {
+    font-family: "Courier New", Courier, monospace;
+    color: #c7254e;
+  }
+</style>
+
+
 Whenever we are making a "value" then initially it is not connected through any set of operations,
 they are said to be "leaf nodes" that's why since no function being present initially, the derivative (grad)
 is initialized to be zero.
 
+<pre>
+<code>
 Now, for this specif example we are taking 
 a = 5
 b = 3
 c = a * b
 d = c + a
+</code>
+</pre>
 
 It is a bit complicated at the first glance but let's break it down.
 for the graphical representation to go [the graphical_representation](./images/graphical_representation.png)
 
+<pre>
+<code>
 we know that,
 dd/dd = 1 (this is basic derivative in action, basically: if you change by 1 d will change by 1 lol..)
 
@@ -28,10 +49,14 @@ dd/da = 1
 
 now,
 c = a * b
+</code>
+</pre>
 
 notice how we don't have direct relation of 'a' and 'b' with the output 'd'
 but... we do know dd/dc, so let's use chain rule and try t ofind dd/da and dd/db
 
+<pre>
+<code>
 differentiating w.r.t a,
 dc/da = d(a*b)/da
 dc/da = b
@@ -48,11 +73,17 @@ dd/da = 3
 
 similarly,
 dd/db = 5
+</code>
+</pre>
 
 notice how the variable 'a' is used in two operations,
 normally all the variables would have a singular gradient value
 but 'a' has two paths (contributions) so the change in output 'd'
 with respect to 'a' needs to accumulate all contributions of 'a'
+<pre>
+<code>
 so,
 dd/da = 1 + 3
 dd/da = 4
+</code>
+</pre>
