@@ -13,7 +13,7 @@ Remember from <a href="./day04.md">file's</a> NOTE section<br>
 Well, today we trampled that statement.<br>
 Now, our model is able to <b><i>"LEARN"</i><b><br>
 
-<b>ISN'T THAT FUCKING AWESOMEEE????<b><br>
+<b>ISN'T THAT FUCKING AWESOMEEE????</b><br>
 
 it is crazy how we moved from basic abstraction of a Value class, integrating calculus logic<br>
 behind calculating gradients and to a learning model.<br>
