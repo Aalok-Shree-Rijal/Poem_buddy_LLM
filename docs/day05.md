@@ -1,4 +1,3 @@
-<pre>
 <h1>I think calling day 4 as "HECTIC" was inappropriate once we complete day 5</h1>
 
 Today we tackled a major problem in our abstraction using the "Value" class.
@@ -37,4 +36,3 @@ PS: today we have only taken a neural network that explicitly only has 1 neuron 
 one output/prediction and calculating loss function and iteration becomes simpler, we will expand on it later.
 Also the xs and ys are carefully made such that the <mark>output ys</mark> only consists of <mark>-1 and 1</mark> because that's the normal<br>
 output we get from our neurons due to <mark>tanh()</mark>
-</pre>

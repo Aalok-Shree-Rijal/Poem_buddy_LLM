@@ -4,7 +4,7 @@ is initialized to be zero.
 
 <pre>
 <code>
-Now, for this specif example we are taking 
+Now, for this specific example we are taking 
 a = 5
 b = 3
 c = a * b
@@ -36,10 +36,10 @@ now,
 c = a * b
 </code>
 </pre>
-
+<pre>
 notice how we don't have direct relation of 'a' and 'b' with the output 'd'
-but... we do know dd/dc, so let's use chain rule and try t ofind dd/da and dd/db
-
+but... we do know dd/dc, so let's use chain rule and try to find dd/da and dd/db
+</pre>
 <pre>
 <code>
 differentiating w.r.t a,
@@ -60,15 +60,15 @@ similarly,
 dd/db = 5
 </code>
 </pre>
-
+<pre>
 notice how the variable 'a' is used in two operations,
 normally all the variables would have a singular gradient value
 but 'a' has two paths (contributions) so the change in output 'd'
 with respect to 'a' needs to accumulate all contributions of 'a'
+</pre>
 <pre>
 <code>
 so,
 dd/da = 1 + 3
 dd/da = 4
 </code>
-</pre>

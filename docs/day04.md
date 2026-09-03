@@ -1,4 +1,3 @@
-<pre>
 <h1>This day is HECTIC !!!</h1>
 
 <u>if all you have done up to day 03 is scroll past the code</u> and fool yourself by
@@ -30,7 +29,7 @@ no. of outputs = 3
 
 Trust me if you just try to vizualize and understand what is happening
 you might reach the conclusion that<br>
-<b>"the outputs of one layer is the input of the another layer"<b>
+<b>"the outputs of one layer is the input of the another layer"</b>
 
 and you are not wrong but i don't think that way will help you get crystal 
 clear about this,
@@ -50,4 +49,3 @@ looking at the code carefully with the comments and looking at the illustration 
 NOTE: we haven't built something that "learns" this is just a simple neural network that takes two initial inputs
 and passes it through specified no. of layers having specified no. of neurons and provides us with the outputs with 
 the connection through the Value abstraction we have made and having the ability to conduct backpropagation
-</pre>

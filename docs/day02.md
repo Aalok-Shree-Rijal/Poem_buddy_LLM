@@ -1,4 +1,3 @@
-<pre>
 If you directly go to the code in /src/micrograd/nn.py it will probably go over your head and become confusing
 but it is not that hard to be honest.
 Let's dissect the things you need to know before hand and the things that the code tells you 
@@ -16,4 +15,3 @@ To grasp the idea of how an artificial neuron (simplified form of biological one
 
 NOTE: in our current neuron no learning is happening, we are just trying to comprehend how a neuron works in just a 
 single cycle.
-</pre>
