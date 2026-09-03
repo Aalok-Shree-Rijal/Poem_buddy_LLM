@@ -1,5 +1,5 @@
-<h1>I think calling day 4 as "HECTIC" was inappropriate once we complete day 5</h1>
-
+<h1>MLP and Loss Minimization: Learning</h1>
+I think calling day 4 as "HECTIC" was inappropriate once we complete day 5<br><br>
 Today we tackled a major problem in our abstraction using the "Value" class.<br>
 We couldn't operate with constants and values, the order of the operations<br>
 between constant and value also dictated if it will get carried out or not.<br>
@@ -9,7 +9,7 @@ worry if the operation we are doing is Value-Value operation.<br>
 It substantially improved our abstraction.
 <hr>
 Now the most important thing,<br>
-Remember from [file](./day04.md) line:46<br>
+Remember from <a href="./day04.md">file</a> line:46<br>
 Well, today we trampled that statement.<br>
 Now, our model is able to <b><i>"LEARN"</i><b><br>
 

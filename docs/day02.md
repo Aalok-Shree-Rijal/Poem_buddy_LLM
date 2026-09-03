@@ -1,7 +1,7 @@
 <h1>The building blocks: Neurons</h1>
-If you directly go to the code in /src/micrograd/nn.py it will probably go over your head and become confusing
-but it is not that hard to be honest.
-Let's dissect the things you need to know before hand and the things that the code tells you 
+If you directly go to the code in /src/micrograd/nn.py it will probably go over your head and become confusing<br>
+but it is not that hard to be honest.<br>
+Let's dissect the things you need to know before hand and the things that the code tells you<br> 
 
 To grasp the idea of how an artificial neuron (simplified form of biological ones) work take a look at
 [image](./images/Artificial_neuron.png)
@@ -13,6 +13,6 @@ To grasp the idea of how an artificial neuron (simplified form of biological one
 4. we add bias on top of this weighted sum
 5. we pass this output from step 4 through a squishification function (i.e for our case 'tanh()')
 6. we use back propagation to find the gradient of each component i.e (x0, x1, ..., xn), (w0, w1, ..., wn), (x0*w0, x1*w1, ..., xn*wn), b
-
+<hr>
 NOTE: in our current neuron no learning is happening, we are just trying to comprehend how a neuron works in just a 
 single cycle.

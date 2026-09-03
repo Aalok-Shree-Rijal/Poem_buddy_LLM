@@ -1,23 +1,24 @@
-<h1>Today is the kind of day that gym bros call rest day, students call saturday, but no matter how small it seems, it is mayday !!</h1>
+<h1>Modularization of MLP</h1>
 
+<h3>Today is the kind of day that gym bros call rest day, students call saturday, but no matter how small it seems, it is mayday !!</h3><br>
 Think of it like this,
 in Day 5 we opened a resturant and since we just opened it we were doing all of the tasks by ourselves: cooking, cleaning, greeting.
 
-Our MLP class's learn() was forced into slavery,
-it was doing everything from appending loss, updating values, resetting gradients, etc.
-but today we broke it down. Now learn has workers who help him get work done much less chaotically.
-
-This art of breaking down different tasks in modules/functions is known as modularity,
-This is a must for developers who want to scale a project.
-
-main additions to the MLP class done today are:
+Our MLP class's learn() was forced into slavery,<br>
+it was doing everything from appending loss, updating values, resetting gradients, etc.<br>
+but today we broke it down. Now learn has workers who help him get work done much less chaotically.<br>
+<br>
+This art of breaking down different tasks in modules/functions is known as modularity,<br>
+This is a must for developers who want to scale a project.<br>
+<br>
+<b>main additions to the MLP class done today are:<b>
 1. parameters()
 2. parameter_count()
 3. zero_grad()
 4. update()
 5. train_step()
 
-<h1>The message below was written around 2 days after completion of day 6</h1>
+<h1>Message regarding furthur expansion</h1>
 <div>
     So, I want to be as honest as i can be.<br>
     I had started this repository so that I can learn more about LLM's in general<br>
