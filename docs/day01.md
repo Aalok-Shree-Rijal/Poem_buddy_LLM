@@ -1,18 +1,3 @@
-<style>
-  pre {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    overflow-x: auto; /* Adds a scrollbar if the code is too wide */
-  }
-  code {
-    font-family: "Courier New", Courier, monospace;
-    color: #c7254e;
-  }
-</style>
-
-
 Whenever we are making a "value" then initially it is not connected through any set of operations,
 they are said to be "leaf nodes" that's why since no function being present initially, the derivative (grad)
 is initialized to be zero.

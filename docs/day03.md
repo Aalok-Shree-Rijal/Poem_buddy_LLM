@@ -1,18 +1,4 @@
-<style>
-  pre {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    overflow-x: auto; /* Adds a scrollbar if the code is too wide */
-  }
-  code {
-    font-family: "Courier New", Courier, monospace;
-    color: #c7254e;
-  }
-</style>
-
-
+<pre>
 Day 3 is really simple and straightforward,
 
 Now we have already built the complicated and manual task of creating Neurons and Values
@@ -33,5 +19,5 @@ Weights, bias, variables -> Value class
 Value class -> gradient values, data attributes, etc
 </code>
 </pre>
-<br>
 always think through this arrow diagram while trying to understand the code
+</pre>

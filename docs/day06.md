@@ -1,4 +1,5 @@
-Today is the kind of day that gym bros call rest day, students call saturday, but no matter how small it seems, it is mayday !!
+<pre>
+<h1>Today is the kind of day that gym bros call rest day, students call saturday, but no matter how small it seems, it is mayday !!</h1>
 
 Think of it like this,
 in Day 5 we opened a resturant and since we just opened it we were doing all of the tasks by ourselves: cooking, cleaning, greeting.
@@ -40,3 +41,5 @@ main additions to the MLP class done today are:
     So stick around and see what happens to this project<br>
     PEACEE!!
 </div>
+
+<pre>
