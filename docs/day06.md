@@ -17,7 +17,7 @@ main additions to the MLP class done today are:
 4. update()
 5. train_step()
 
-<!-- The message below was written 2 days after day 6 -->
+<h1>The message below was written around 2 days after completion of day 6</h1>
 <div>
     So, I want to be as honest as i can be.
     I had started this repository so that I can learn more about LLM's in general
