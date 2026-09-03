@@ -8,7 +8,7 @@ it was doing everything from appending loss, updating values, resetting gradient
 but today we broke it down. Now learn has workers who help him get work done much less chaotically.
 
 This art of breaking down different tasks in modules/functions is known as modularity,
-This is a must for developers who want to sclae a project.
+This is a must for developers who want to scale a project.
 
 main additions to the MLP class done today are:
 1. parameters()
@@ -19,18 +19,18 @@ main additions to the MLP class done today are:
 
 <h1>The message below was written around 2 days after completion of day 6</h1>
 <div>
-    So, I want to be as honest as i can be.
-    I had started this repository so that I can learn more about LLM's in general
-    and my passion for writing poems guided me to the direction of a poem chat bot.
-    I had planned to take learning materials from different sources. But now i was
-    at the crossroads because we completed a very basiccccc MLP so what's next?
+    So, I want to be as honest as i can be.<br>
+    I had started this repository so that I can learn more about LLM's in general<br>
+    and my passion for writing poems guided me to the direction of a poem chat bot.<br>
+    I had planned to take learning materials from different sources. But now i was<br>
+    at the crossroads because we completed a very basiccccc MLP so what's next?<br>
     <br><br>
-    I had learned of Value class, Neuron, Layers, Backpropagation and MLP from 
-    Karapathy's lecture 1.
+    I had learned of Value class, Neuron, Layers, Backpropagation and MLP from<br> 
+    Karapathy's lecture 1.<br>
     <br><br>
     ANDREJ IF YOU ARE READING THIS <i>(I don't know how T0T)</i> HATS OFF TO YOU 🫡
     <br><br>
-    So, I took a sneak peek on what exactly does Andrej teaches throughout this course
+    So, I took a sneak peek on what exactly does Andrej teaches throughout this course<br>
     because i don't have good experiences with courses and tutorials throwback to <a href="https://github.com/Aalok-Shree-Rijal/learning_python/blob/main/README.md">readme file</a> of learning_python
     <br><br>
     and i found out that <mark>Andrej is basically building the same thing</mark> T_T<br>

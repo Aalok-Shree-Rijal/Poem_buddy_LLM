@@ -31,18 +31,17 @@ Trust me if you just try to vizualize and understand what is happening
 you might reach the conclusion that<br>
 <b>"the outputs of one layer is the input of the another layer"</b>
 
-and you are not wrong but i don't think that way will help you get crystal 
-clear about this,
-one thing that made this click was whenever seeing relation between input and a layer
-focus on the layer's neuron rather than the inputs.
-<mark><u>look for a single neuron.<u></mark>
-inorder to make this visualization easy i have made another illustration of the same image
-but <mark>isolated just o1's path</mark>.
+and you are not wrong but i don't think that way will help you get crystal clear about this,<br><br>
+one thing that made this click was whenever seeing relation between input and a layer<br>
+focus on the layer's neuron rather than the inputs.<br>
+<mark><u>look for a single neuron.<u></mark><br>
+inorder to make this visualization easy i have made another illustration of the same image<br>
+but <mark>isolated just o1's path</mark>.<br>
 go see the [image](./images/mlp_single_output_path.png)
-
-notice how n2 and n3 of L3 don't have any direct relationship with o1?
-this will come in handy in day04's one experiment.
-
+<br><br>
+notice how n2 and n3 of L3 don't have any direct relationship with o1?<br>
+this will come in handy in day04's one experiment.<br>
+<br>
 And if you have paid attention to all the things we have gone through earlier like Values, neurons, layers then <br>
 looking at the code carefully with the comments and looking at the illustration is enough to understand for day 04.<br>
 <hr>

@@ -1,5 +1,5 @@
-Whenever we are making a "value" then initially it is not connected through any set of operations,
-they are said to be "leaf nodes" that's why since no function being present initially, the derivative (grad)
+Whenever we are making a "value" then initially it is not connected through any set of operations,<br>
+they are said to be "leaf nodes" that's why since no function being present initially, the derivative (grad)<br>
 is initialized to be zero.
 
 <pre>
@@ -12,7 +12,7 @@ d = c + a
 </code>
 </pre>
 
-It is a bit complicated at the first glance but let's break it down.
+It is a bit complicated at the first glance but let's break it down.<br>
 for the graphical representation to go [the graphical_representation](./images/graphical_representation.png)
 
 <pre>
@@ -36,10 +36,10 @@ now,
 c = a * b
 </code>
 </pre>
-<pre>
-notice how we don't have direct relation of 'a' and 'b' with the output 'd'
-but... we do know dd/dc, so let's use chain rule and try to find dd/da and dd/db
-</pre>
+
+notice how we don't have direct relation of 'a' and 'b' with the output 'd'<br>
+but... we do know dd/dc, so let's use chain rule and try to find dd/da and dd/db<br>
+
 <pre>
 <code>
 differentiating w.r.t a,
@@ -60,12 +60,12 @@ similarly,
 dd/db = 5
 </code>
 </pre>
-<pre>
-notice how the variable 'a' is used in two operations,
-normally all the variables would have a singular gradient value
-but 'a' has two paths (contributions) so the change in output 'd'
-with respect to 'a' needs to accumulate all contributions of 'a'
-</pre>
+<br>
+notice how the variable 'a' is used in two operations,<br>
+normally all the variables would have a singular gradient value<br>
+but 'a' has two paths (contributions) so the change in output 'd'<br>
+with respect to 'a' needs to accumulate all contributions of 'a'<br>
+<br>
 <pre>
 <code>
 so,
