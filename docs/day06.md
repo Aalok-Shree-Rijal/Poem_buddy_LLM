@@ -33,7 +33,7 @@ main additions to the MLP class done today are:
     So, I took a sneak peek on what exactly does Andrej teaches throughout this course
     because i don't have good experiences with courses and tutorials throwback to <a href="https://github.com/Aalok-Shree-Rijal/learning_python/blob/main/README.md">readme file</a> of learning_python
     <br><br>
-    and i found out that #Andrej is basically building the same thing# T_T<br>
+    and i found out that <mark>Andrej is basically building the same thing</mark> T_T<br>
     so, I have decided to use the <a href='https://karpathy.ai/zero-to-hero.html'>Neural Networks: Zero to Hero</a> as my main learning material<br><br>
     <i><b>but. but.. but...</b></i> in usual Aalok fashion I will document my journey not just copying code from Andrej's course but showcasing to you all about where i got stuck, how did i tackle it, what made it click, any other resources that i dug up for better understanding, etc. <br>
     <br>
