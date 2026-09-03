@@ -23,7 +23,7 @@ This is a must for developers who want to scale a project.<br>
     So, I want to be as honest as i can be.<br>
     I had started this repository so that I can learn more about LLM's in general<br>
     and my passion for writing poems guided me to the direction of a poem chat bot.<br>
-    I had planned to take learning materials from different sources. But now i was<br>
+    I had planned to take learning materials from different sources. But now i am<br>
     at the crossroads because we completed a very basiccccc MLP so what's next?<br>
     <br><br>
     I had learned of Value class, Neuron, Layers, Backpropagation and MLP from<br> 
