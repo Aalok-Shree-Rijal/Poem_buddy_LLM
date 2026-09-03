@@ -11,7 +11,7 @@ but today we broke it down. Now learn has workers who help him get work done muc
 This art of breaking down different tasks in modules/functions is known as modularity,<br>
 This is a must for developers who want to scale a project.<br>
 <br>
-<b>main additions to the MLP class done today are:<b>
+<b>main additions to the MLP class done today are:</b>
 1. parameters()
 2. parameter_count()
 3. zero_grad()
