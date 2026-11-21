@@ -11,10 +11,8 @@ words = open('./names.txt', 'r').read().splitlines()
 
 # now let's try and go with 'bigram' language model (more about it in ./docs/makemore/day01.md)
 
-# creating a 2d array (tensor) using the imported torch library 26(alphabets) + 2(start and end tags) = 28
-
-# and to embody all possible combinations of what can come after one we use a 28*28 tensor: more about it in the readme file
-N = torch.zeros((28,28), dtype=torch.int32)
+# and to embody all possible combinations of what can come after one we use a 27*27 tensor: more about it in the readme file
+N = torch.zeros((27,27), dtype=torch.int32)
 
 # since, words is a list of all the words this will first join all the words then 'set()' will remove all the repetition and we will convert it into a list and then sort it then we will get a big list of all the characters used sorted from a to z.
 chars = sorted(list(set(''.join(words))))
@@ -44,13 +42,26 @@ for w in words:
         # now rather than updating a dictionary value we are just updating the specific item in the 2d array
         N[ix1,ix2] += 1
 
-# calculating probability distributions
-p = N[0].float()
-p = p/p.sum()
 
-# remember the probability from school sum of probabilities is 1 !
-print(p, sum(p))
+P = N.float()
+P = P/P.sum()
+#   WARNING: pytorch's current version is very important (more about it in ./docs/Makemore/day02.md)
+g = torch.Generator().manual_seed(214748364)
 
+for i in range(10):
+ 
+    out = []
+    ix = 0
+
+    while True:
+        p = P[ix]
+        
+        ix = torch.multinomial(p, num_samples=1, replacement=True, generator=g).item()
+        out.append(itos[ix])
+        if ix == 0:
+            break
+    print(''.join(out))
+    
 # this is to plot the bigrams and their occurance
 plt.figure(figsize=(16,16))
 plt.imshow(N, cmap='Blues')
@@ -62,4 +73,6 @@ for i in range(27):
 plt.show()
 
 # continue tommorrow from here
-# https://youtu.be/PaCmpygFfXo?t=1631
+# https://youtu.be/PaCmpygFfXo?t=2842
+
+# just go back 5 minutes in the video and then go and learn broadcasting semantics of pytorch
