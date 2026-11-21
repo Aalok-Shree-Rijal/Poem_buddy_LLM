@@ -13,7 +13,7 @@ ANY TESTS -> (./tests)
 </code>
 </pre>
 
-<p>PS: I've decided that for makemore the approach of how you read files is bit different and this is also useful in general for also navigating through micrograd's code.</p><br><br>
+<p>PS: I've decided that for makemore the approach of how you read files is bit different and this is also useful in general for also navigating through micrograd's code.</p>
 <hr>
-<p>For mmicrograd the day wise modular system worked where readme files matched up with the experiments and classes helped to manage it, but for makemore we(I) will continue with version to track where we are. <br><b><mark>I would highly encourage you to not look at this codebase directly go to the git commits and from there read individual commit(checkpoints of sort)</mark></b></p><br><br>
+<p>For micrograd the day wise modular system worked where readme files matched up with the experiments and classes helped to manage it, but for makemore we(I) will continue with version to track where we are. <br><b><mark>I would highly encourage you to not look at this codebase directly. Go to the git commit history and from there read individual commit(checkpoints of sort)</mark></b></p><br><br>
 Hope you enjoy this learning journey of mine.
