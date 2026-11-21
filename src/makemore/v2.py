@@ -73,6 +73,4 @@ for i in range(27):
 plt.show()
 
 # continue tommorrow from here
-# https://youtu.be/PaCmpygFfXo?t=2842
-
-# just go back 5 minutes in the video and then go and learn broadcasting semantics of pytorch
+# https://youtu.be/PaCmpygFfXo?t=3077
